@@ -57,7 +57,7 @@ export function LatestListings() {
             <select 
               value={activeFilter}
               onChange={(e) => setActiveFilter(e.target.value)}
-              className="w-full bg-white border border-gray-200 text-gray-700 py-3 px-5 rounded-full font-medium shadow-sm outline-none focus:ring-2 focus:ring-yellow-500"
+              className="w-full appearance-none bg-white border border-gray-200 text-gray-700 py-3 pl-5 pr-10 rounded-full font-medium shadow-sm outline-none focus:ring-2 focus:ring-yellow-500 cursor-pointer"
             >
               <option value="House">🏠 House</option>
               <option value="Villa">🏢 Villa</option>
