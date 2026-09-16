@@ -1,0 +1,94 @@
+.header {
+  position: absolute;
+  top: 0; left: 0; width: 100%;
+  z-index: 50;
+  background-color: #090909;
+  padding: 1rem 1.5rem;
+  color: white;
+}
+
+.header-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #eab308; /* yellow-500 */
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.nav-desktop, .cta-desktop {
+  display: none; /* Escondido no celular */
+}
+
+.menu-mobile {
+  color: #eab308;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Telas maiores (Desktop) */
+@media (min-width: 1024px) {
+  .header { padding: 1.5rem; }
+  .logo { font-size: 1.5rem; }
+  .menu-mobile { display: none; }
+  
+  .nav-desktop {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    font-size: 0.875rem;
+  }
+
+  .nav-item {
+    border: 1px solid #6b7280;
+    border-radius: 9999px;
+    background-color: #222222;
+    padding: 0.25rem 1rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    transition: background-color 0.3s;
+  }
+
+  .nav-item:hover { background-color: #374151; }
+
+  .cta-desktop {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 0.875rem;
+  }
+
+  .phone-contact {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .phone-icon { color: #eab308; }
+
+  .btn-primary {
+    background: linear-gradient(to right, #fde047, #facc15, #fde047);
+    color: black;
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  
+  .btn-primary:hover { transform: scale(1.05); }
+}

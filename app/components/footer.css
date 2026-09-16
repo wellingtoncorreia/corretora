@@ -1,0 +1,49 @@
+/* --- Footer Custom Styles --- */
+.footer-container {
+  background-color: #0b0f19; /* Fundo escuro elegante */
+  color: #9ca3af; /* Cinza suave para os textos */
+}
+
+/* Efeito dourado na Logo do Rodapé */
+.footer-logo-gold {
+  background: linear-gradient(135deg, #fffbe8 0%, #ebcb7b 50%, #b39d54 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Botão "TOP" superior com linha de conexão */
+.footer-top-btn {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #0b0f19;
+  border: 1px solid #1f2937;
+  color: #ffffff;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer-top-btn:hover {
+  border-color: #ca8a04;
+  color: #ca8a04;
+}
+
+/* Caixa de E-newsletter */
+.newsletter-box {
+  background-color: #151a24;
+  border: 1px solid #1f2937;
+}
+
+/* Ícones de Redes Sociais */
+.social-icon {
+  color: #9ca3af;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.social-icon:hover {
+  color: #ebcb7b;
+  transform: translateY(-2px);
+}
