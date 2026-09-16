@@ -1,6 +1,6 @@
 'use client';
 import { useState, useRef } from 'react';
-import { useProperties } from '../src/hooks/useProperties';
+import { useProperties } from '../hooks/useProperties';
 import { FaHome, FaBuilding, FaRegBuilding, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './latestListings.css';
 
@@ -51,8 +51,23 @@ export function LatestListings() {
             <h3 className="title-main text-3xl font-bold">Featured {activeFilter}</h3>
           </div>
           
-          {/* Botões de Filtro com Funcionalidade */}
-          <div className="flex space-x-4">
+          {/* --- CONTROLE DE FILTROS: MOBILE --- */}
+          {/* Exibe um Select elegante em telas pequenas e esconde no desktop */}
+          <div className="w-full md:hidden">
+            <select 
+              value={activeFilter}
+              onChange={(e) => setActiveFilter(e.target.value)}
+              className="w-full bg-white border border-gray-200 text-gray-700 py-3 px-5 rounded-full font-medium shadow-sm outline-none focus:ring-2 focus:ring-yellow-500"
+            >
+              <option value="House">🏠 House</option>
+              <option value="Villa">🏢 Villa</option>
+              <option value="Apartment">🏙️ Apartment</option>
+            </select>
+          </div>
+
+          {/* --- CONTROLE DE FILTROS: DESKTOP --- */}
+          {/* Esconde no mobile e exibe os botões originais em telas médias/grandes */}
+          <div className="hidden md:flex space-x-4">
             <button 
               onClick={() => setActiveFilter('House')}
               className={`filter-btn flex items-center gap-2 ${activeFilter === 'House' ? 'active' : 'inactive'}`}
