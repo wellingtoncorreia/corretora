@@ -1,6 +1,6 @@
 'use client';
 import { useState, useRef } from 'react';
-import { useProperties } from '../hooks/useProperties';
+import { useProperties } from '../src/hooks/useProperties';
 import { FaHome, FaBuilding, FaRegBuilding, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import './latestListings.css';
 
