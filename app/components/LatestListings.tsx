@@ -41,7 +41,7 @@ export function LatestListings() {
           Latest Listings
         </h2>
 
-        <div className="flex flex-col xl:flex-row justify-between items-end mb-10 gap-6 xl:gap-0">
+        <div className="flex flex-col xl:flex-row justify-between items-start xl:items-end mb-10 gap-6 xl:gap-0">
           
           <div className="w-full xl:w-auto">
             <div className="flex items-center gap-2 mb-2">
